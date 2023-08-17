@@ -1,0 +1,28 @@
+Assignment: Weather Forecast App with Current Weather Data
+
+Requirements:
+
+Create a React application that fetches and displays current weather data using the WeatherAPI.
+The application should have the following features:
+Allow users to enter a city name to get the current weather.
+Display current weather conditions including temperature, weather description, humidity, and wind speed.
+Apply appropriate styling to make the weather information visually appealing.
+Use functional components, React hooks, and state management.
+Use the fetch API or a library like Axios to fetch weather data from the WeatherAPI.
+Implement proper error handling in case the API request fails or returns an error.
+Apply loading indicators while waiting for API data to be fetched.
+Optional: Use local storage to remember the last searched city and display its weather on app launch.
+Instructions:
+
+Set up a new React application or use your existing setup.
+Create components for the weather display and search form.
+Implement state to manage the weather data and user input.
+Fetch current weather data from the WeatherAPI using the fetch API or Axios.
+Display the current weather conditions based on the user's input.
+Implement error handling for cases where the API request fails.
+Apply loading indicators while waiting for data to be fetched.
+Style your application to present weather information in a visually appealing way.
+Test your application with different city names and ensure the weather information is accurate and up-to-date.
+By focusing on current weather data, you can still create a valuable and informative Weather Forecast App that provides users with important weather information for their chosen city.
+
+Feel free to customize the assignment based on your preferences and explore additional features or enhancements. Good luck, and enjoy building your Weather Forecast App!
