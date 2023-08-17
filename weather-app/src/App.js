@@ -1,11 +1,12 @@
+import WeatherForm from "./components/WeatherForm";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1>Weather App</h1>
+      <WeatherForm />
     </div>
   );
 }
 
 export default App;
-
-// API_KEY = "c2b0a4b0c2b0a4b0c2b0a4b0c2b0a4b0"
