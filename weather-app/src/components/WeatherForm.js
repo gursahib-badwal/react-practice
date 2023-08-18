@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import WeatherDisplay from "./WeatherDisplay";
 
 export default function WeatherForm() {
@@ -35,7 +35,7 @@ export default function WeatherForm() {
         const response_json = await response.json();
         setData(response_json);
         setLoading(false);
-        // console.log(response_json);
+        console.log(response_json);
       }
     } catch (error) {
       console.log(error);
@@ -44,10 +44,19 @@ export default function WeatherForm() {
 
   return (
     <div>
-      <h1>WeatherForm here!</h1>
-      <label htmlFor="city">City: </label>
-      <input type="text" name="city" onChange={(e) => setCity(e.target.value)} />
-      <button onClick={handleSubmit}>Submit</button>
+      {/* <h1>WeatherForm here!</h1> */}
+      <label className="label" htmlFor="city">
+        City:{" "}
+      </label>
+      <input
+        className="search"
+        type="text"
+        name="city"
+        onChange={(e) => setCity(e.target.value)}
+      />
+      <button className="button" onClick={handleSubmit}>
+        Submit
+      </button>
       {!loading && <WeatherDisplay data={data} />}
     </div>
   );
