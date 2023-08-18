@@ -36,9 +36,14 @@ export default function WeatherForm() {
         setData(response_json);
         setLoading(false);
         console.log(response_json);
+      } else {
+        const error_text = await response.text();
+        alert("Error: " + error_text);
+        //This else statement is particularly for the response from the API
       }
     } catch (error) {
       console.log(error);
+      //This catch statement is for the whole process of fetching, converting, and setting the data
     }
   }
 
@@ -57,7 +62,9 @@ export default function WeatherForm() {
       <button className="button" onClick={handleSubmit}>
         Submit
       </button>
-      {!loading && <WeatherDisplay data={data} />}
+      {/* {loading && <h1>Loading...</h1>} */}
+      {/* Using ternary operator instead of dealing with the two loading states separately */}
+      {loading ? <h1>Loading...</h1> : <WeatherDisplay data={data} />}
     </div>
   );
 }

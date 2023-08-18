@@ -13,7 +13,11 @@ export default function WeatherDisplay(props) {
         <h3 className="text-xl mt-2">
           Weather Condition: {props.data.current.condition.text}
         </h3>
-        <img src={`https:${props.data.current.condition.icon}`} className="wd-24 h-24" />
+        <img
+          src={`https:${props.data.current.condition.icon}`}
+          alt="weather condition"
+          className="wd-24 h-24"
+        />
       </div>
       <h6 className="text-2xl ml-10">Temperature</h6>
       <ul className="ml-5">
