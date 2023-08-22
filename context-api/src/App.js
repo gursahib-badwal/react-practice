@@ -1,7 +1,12 @@
+import CartItems from "./components/CartItems";
+import { ContextProvider } from "./context/CartContext";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
+      <ContextProvider>
+        <CartItems />
+      </ContextProvider>
     </div>
   );
 }
