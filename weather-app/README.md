@@ -1,6 +1,6 @@
 # To run this react project you will need an API key
 
-Go and make an account at www.weatherapi.com to get your own API key and then replace that key with the placeholder the .env file in the src folder of the project.
+Go and make an account at www.weatherapi.com to get your own API key and then replace that key with the placeholder in the .env file.
 
 # Getting Started with Create React App
 
